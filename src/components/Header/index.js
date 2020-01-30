@@ -5,6 +5,8 @@ import logo from '~/assets/logo-purple.svg';
 
 import { Container, Content, Profile } from './styles';
 
+import Notifications from '~/components/Notifications';
+
 export default function Header() {
   return (
     <Container>
@@ -14,6 +16,7 @@ export default function Header() {
           <Link to="/dashboard">DASHBOARD</Link>
         </nav>
         <aside>
+          <Notifications />
           <Profile>
             <div>
               <strong>Vinícius Crestani</strong>
